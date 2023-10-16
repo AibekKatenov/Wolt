@@ -1,0 +1,59 @@
+.index__header {
+  display: flex;
+  justify-content: center;
+}
+.index__inheader {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px 10px 0;
+  max-width: 1200px;
+  width: 100%;
+}
+.index__inheader > a > img {
+  max-width: 120px;
+}
+.index__registration {
+  display: flex;
+  grid-gap: 10px;
+}
+.index__login {
+  background-color: white;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 10px 20px;
+  border: none;
+  font-family: -apple-system,BlinkMacSystemFont,Roboto,"Segoe UI",Arimo,"Open Sans",sans-serif;
+}
+.index__register {
+  color: rgb(0, 157, 224);
+  background-color: rgba(0, 157, 224, 0.08);
+  font-weight: bold;
+  font-size: 14px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-family: -apple-system,BlinkMacSystemFont,Roboto,"Segoe UI",Arimo,"Open Sans",sans-serif;
+}
+.index__register:hover {
+  background-color: rgba(0, 157, 224, 0.12);
+}
+
+.index__appetite {
+  background-image: url('C:/Users/Professional/Desktop/WebDev/Wolt/images/Appetite.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 600px;
+  padding-left: 60px;
+}
+.index__appetite__main {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+}
+.index__appetite__main > h1 {
+  font-size: 3.75rem;
+  line-height: 4.75rem;
+  font-weight: 700;
+  font-family: WoltHeading-Omnes, -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", Arimo, "Open Sans", sans-serif;
+}
