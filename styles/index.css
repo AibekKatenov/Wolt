@@ -4,7 +4,9 @@ body {
 
 .index__header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  padding-left: 15px;
+  background-color: #fff;
 }
 .index__inheader {
   display: flex;
@@ -105,17 +107,97 @@ body {
 
 .index__think {
   margin: 0 80px;
-  padding-top: 120px;
+  padding: 120px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
-.index__think > h1 {
+.index__think > h1, .index__dear__download > h1 {
   font-size: 3rem;
   line-height: 4.75rem;
   font-weight: bold;
   font-family: WoltHeading-Omnes, -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", Arimo, "Open Sans", sans-serif;
+}
+.index__think > p, .index__dear__download > p {
+  width: 80%;
+  margin-top: 30px;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-family: WoltHeading-Omnes, -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", Arimo, "Open Sans", sans-serif;
+}
+
+.index__dear {
+  display: flex;
+}
+.index__dear__download {
+  padding: 80px 0 80px 60px;
+  background-color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.index__dear > img {
+  width: 60%;
+}
+.index__dear__download > h1 {
+  line-height: 3.75rem;
+}
+.index__dear__download > p {
+  z-index: 10;
+  width: 120%;
+  font-size: 16px;
+  line-height: 1.65rem;
+  color: #696969;
+}
+.index__download {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 35%;
+}
+.index__download > a > img {
+  width: 100%;
+  margin-top: -20px;
+}
+
+.index__footer {
+  padding: 80px 60px;
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  grid-gap: 40px;
+}
+.index__footer__download {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+.index__footer__download > img, .index__footer__download > a > img {
+  width: 60%;
+  margin-top: -20px;
+}
+.index__footer__download > img {
+  height: 60%;
+}
+.index__footer__company {
+  display: flex;
+  flex-direction: column;
+}
+.index__footer__company > h3 {
+  color: #999;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.index__footer__list > li {
+  color: white;
+  margin-top: 14px;
+}
+.index__footer__list > li:hover {
+  text-decoration: underline;
 }
 
 .index__modal {
