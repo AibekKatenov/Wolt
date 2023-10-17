@@ -201,7 +201,7 @@ body {
 }
 
 .index__modal {
-  display: none;
+  display: flex;
   position: fixed;
   top: 0;
   left: 0;
@@ -213,9 +213,23 @@ body {
   align-items: center;
 }
 .index__modal1 {
-  width: 100px;
-  height: 100px;
+  padding: 12px;
+  width: 40%;
+  height: 95%;
+  border-radius: 20px;
   background-color: white;
+}
+.index__modal__cancel {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  border: none;
+  border-radius: 50%;
+  left: 90%;
+}
+.index__modal__cancel:hover {
+  background-color: #D3D3D3;
+  transition: 0.3s;
 }
 .body_stopscroll {
   overflow-y: hidden;
