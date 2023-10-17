@@ -1,3 +1,7 @@
+body {
+  position: relative;
+}
+
 .index__header {
   display: flex;
   justify-content: center;
@@ -42,6 +46,8 @@
   background-image: url('C:/Users/Professional/Desktop/WebDev/Wolt/images/Appetite.jpg');
   background-size: cover;
   background-position: center;
+  display: flex;
+  align-items: center;
   width: 100%;
   height: 600px;
   padding-left: 60px;
@@ -49,11 +55,89 @@
 .index__appetite__main {
   display: flex;
   flex-direction: column;
-  max-width: 300px;
+  justify-content: center;
+  height: 80%;
+  max-width: 420px;
 }
 .index__appetite__main > h1 {
   font-size: 3.75rem;
   line-height: 4.75rem;
   font-weight: 700;
+  margin-bottom: 16px;
   font-family: WoltHeading-Omnes, -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", Arimo, "Open Sans", sans-serif;
+}
+.index__appetite__enter {
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  background-color: white;
+  padding: 5px;
+  border: 2px solid white;
+}
+.index__appetite__icon {
+  padding: 10px;
+  color: #999;
+}
+.index__appetite__input {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 10px;
+}
+.index__appetite__enter:hover {
+  border: 2px solid blue;
+  transition: 0.5s;
+}
+.index__appetite__geo {
+  display: flex;
+  grid-gap: 30px;
+  margin-top: 28px;
+  font-size: 16px;
+  flex-direction: column;
+}
+.index__appetite__geo > a {
+  color: black;
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", Arimo, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.fa-mars-double {
+  margin-right: 12px;
+}
+
+.index__think {
+  margin: 0 80px;
+  padding-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.index__think > h1 {
+  font-size: 3rem;
+  line-height: 4.75rem;
+  font-weight: bold;
+  font-family: WoltHeading-Omnes, -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", Arimo, "Open Sans", sans-serif;
+}
+
+.index__modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 20;
+  justify-content: center;
+  align-items: center;
+}
+.index__modal1 {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+}
+.body_stopscroll {
+  overflow-y: hidden;
+}
+.show_modal {
+  display: flex !important;
 }
