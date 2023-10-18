@@ -1,0 +1,294 @@
+body {
+  position: relative;
+}
+
+.index__header {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 15px;
+  background-color: #fff;
+}
+.index__inheader {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px 10px 0;
+  max-width: 1200px;
+  width: 100%;
+}
+.index__inheader > a > img {
+  max-width: 120px;
+}
+.index__registration {
+  display: flex;
+  grid-gap: 10px;
+}
+.index__login {
+  background-color: white;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 10px 20px;
+  border: none;
+  font-family: -apple-system,BlinkMacSystemFont,Roboto,"Segoe UI",Arimo,"Open Sans",sans-serif;
+}
+.index__register {
+  color: rgb(0, 157, 224);
+  background-color: rgba(0, 157, 224, 0.08);
+  font-weight: bold;
+  font-size: 14px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-family: -apple-system,BlinkMacSystemFont,Roboto,"Segoe UI",Arimo,"Open Sans",sans-serif;
+}
+.index__register:hover {
+  background-color: rgba(0, 157, 224, 0.12);
+}
+
+.index__appetite {
+  background-image: url('C:/Users/Professional/Desktop/WebDev/Wolt/images/Appetite.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 600px;
+  padding-left: 60px;
+}
+.index__appetite__main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80%;
+  max-width: 420px;
+}
+.index__appetite__main > h1 {
+  font-size: 3.75rem;
+  line-height: 4.75rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  font-family: WoltHeading-Omnes, -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", Arimo, "Open Sans", sans-serif;
+}
+.index__appetite__enter {
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  background-color: white;
+  padding: 5px;
+  border: 2px solid white;
+}
+.index__appetite__icon {
+  padding: 10px;
+  color: #999;
+}
+.index__appetite__input {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 10px;
+}
+.index__appetite__enter:hover {
+  border: 2px solid blue;
+  transition: 0.5s;
+}
+.index__appetite__geo {
+  display: flex;
+  grid-gap: 30px;
+  margin-top: 28px;
+  font-size: 16px;
+  flex-direction: column;
+}
+.index__appetite__geo > a {
+  color: black;
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", Arimo, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.fa-mars-double {
+  margin-right: 12px;
+}
+
+.index__think {
+  margin: 0 80px;
+  padding: 120px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.index__think > h1, .index__dear__download > h1, .index__modal__enter > h1 {
+  font-size: 3rem;
+  line-height: 4.75rem;
+  font-weight: bold;
+  font-family: WoltHeading-Omnes, -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", Arimo, "Open Sans", sans-serif;
+}
+.index__think > p, .index__dear__download > p, .index__modal__enter > p {
+  width: 80%;
+  margin-top: 30px;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-family: WoltHeading-Omnes, -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", Arimo, "Open Sans", sans-serif;
+}
+
+.index__dear {
+  display: flex;
+}
+.index__dear__download {
+  padding: 80px 0 80px 60px;
+  background-color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.index__dear > img {
+  width: 60%;
+}
+.index__dear__download > h1 {
+  line-height: 3.75rem;
+}
+.index__dear__download > p {
+  z-index: 10;
+  width: 120%;
+  font-size: 16px;
+  line-height: 1.65rem;
+  color: #696969;
+}
+.index__download {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 35%;
+}
+.index__download > a > img {
+  width: 100%;
+  margin-top: -20px;
+}
+
+.index__footer {
+  padding: 80px 60px;
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  grid-gap: 40px;
+}
+.index__footer__download {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+.index__footer__download > img, .index__footer__download > a > img {
+  width: 60%;
+  margin-top: -20px;
+}
+.index__footer__download > img {
+  height: 60%;
+}
+.index__footer__company {
+  display: flex;
+  flex-direction: column;
+}
+.index__footer__company > h3 {
+  color: #999;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.index__footer__list > li {
+  color: white;
+  margin-top: 14px;
+}
+.index__footer__list > li:hover {
+  text-decoration: underline;
+}
+
+.index__modal {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 20;
+  justify-content: center;
+  align-items: center;
+}
+.index__modal1 {
+  padding: 16px;
+  width: 40%;
+  height: 95%;
+  border-radius: 20px;
+  background-color: white;
+}
+.index__modal__cancel {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  border: none;
+  border-radius: 50%;
+  left: 90%;
+}
+.index__modal__cancel:hover {
+  background-color: #D3D3D3;
+  transition: 0.3s;
+}
+.index__modal__enter {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  justify-content: center;
+}
+.index__modal__enter > h1 {
+  line-height: 2.5rem;
+  font-size: 32px;
+}
+.index__modal__enter > p {
+  line-height: normal;
+  font-size: 16px;
+  margin-top: 16px;
+}
+.index__modal__signs {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.index__modal__google {
+  border: 2px solid #DCDCDC;
+  margin-top: 8px;
+}
+.index__modal__g_button {
+  background-color: white;
+  font-weight: bold;
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", Arimo, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  margin-right: 8%;
+}
+.index__modal__google:hover {
+  border: 2px solid #DCDCDC;
+  background-color: #f0f0f0;
+  transition: 0.3s;
+}
+.index__modal__google:hover .index__modal__g_button {
+  background-color: #f0f0f0;
+  transition: 0.3s;
+}
+.index__modal__apple, .index__modal__a_button {
+  background-color: black;
+  color: white;
+}
+.index__modal__facebook, .index__modal__f_button {
+  background-color: #1E90FF;
+  color: white;
+}
+.index__modal__apple:hover, .index__modal__apple:hover .index__modal__a_button {
+  background-color: black;
+}
+.index__modal__facebook:hover, .index__modal__facebook:hover .index__modal__f_button {
+  background-color: #1E90FF;
+}
+.body_stopscroll {
+  overflow-y: hidden;
+}
+.show_modal {
+  display: flex !important;
+}
