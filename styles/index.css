@@ -113,13 +113,13 @@ body {
   align-items: center;
   text-align: center;
 }
-.index__think > h1, .index__dear__download > h1 {
+.index__think > h1, .index__dear__download > h1, .index__modal__enter > h1 {
   font-size: 3rem;
   line-height: 4.75rem;
   font-weight: bold;
   font-family: WoltHeading-Omnes, -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", Arimo, "Open Sans", sans-serif;
 }
-.index__think > p, .index__dear__download > p {
+.index__think > p, .index__dear__download > p, .index__modal__enter > p {
   width: 80%;
   margin-top: 30px;
   font-size: 2rem;
@@ -213,7 +213,7 @@ body {
   align-items: center;
 }
 .index__modal1 {
-  padding: 12px;
+  padding: 16px;
   width: 40%;
   height: 95%;
   border-radius: 20px;
@@ -230,6 +230,61 @@ body {
 .index__modal__cancel:hover {
   background-color: #D3D3D3;
   transition: 0.3s;
+}
+.index__modal__enter {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  justify-content: center;
+}
+.index__modal__enter > h1 {
+  line-height: 2.5rem;
+  font-size: 32px;
+}
+.index__modal__enter > p {
+  line-height: normal;
+  font-size: 16px;
+  margin-top: 16px;
+}
+.index__modal__signs {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.index__modal__google {
+  border: 2px solid #DCDCDC;
+  margin-top: 8px;
+}
+.index__modal__g_button {
+  background-color: white;
+  font-weight: bold;
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", Arimo, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  margin-right: 8%;
+}
+.index__modal__google:hover {
+  border: 2px solid #DCDCDC;
+  background-color: #f0f0f0;
+  transition: 0.3s;
+}
+.index__modal__google:hover .index__modal__g_button {
+  background-color: #f0f0f0;
+  transition: 0.3s;
+}
+.index__modal__apple, .index__modal__a_button {
+  background-color: black;
+  color: white;
+}
+.index__modal__facebook, .index__modal__f_button {
+  background-color: #1E90FF;
+  color: white;
+}
+.index__modal__apple:hover, .index__modal__apple:hover .index__modal__a_button {
+  background-color: black;
+}
+.index__modal__facebook:hover, .index__modal__facebook:hover .index__modal__f_button {
+  background-color: #1E90FF;
 }
 .body_stopscroll {
   overflow-y: hidden;
