@@ -83,7 +83,7 @@
     </div>
     <h1>История заказов</h1>
     <div class="profile__history">
-      <div class="profile__promocode profile__trade">
+      <div class="profile__promocode profile__trade" onclick="stopScroll()">
         <div class="profile__promocode__title">
           <h2>Gucci</h2>
           <h2>184324 KZT</h2>
@@ -157,6 +157,67 @@
             <li><a>Wolt Life</a></li>
         </ul>
     </div>
-</footer>
+  </footer>
+
+  <div class="index__modal" id="modal">
+    <div class="index__modal1 profile__modal1">
+      <button class="index__modal__cancel" onclick="stopScroll()"><i class='fa-solid fa-x'></i></button>
+      <div class="profile__top-section">
+        <div class="profile__address">
+          <div class="profile__address-content">
+            <h2>Burger King</h2>
+            <p>ул. Толе би 59, г. Алматы</p>
+          </div>
+        </div>
+        <div class="profile__contact">
+          <div class="profile__contact-content">
+            <div class="profile__email">Email: timur.baitukenov21@fizmat.kz</div>
+            <div class="profile__number">Number: +77079969966</div>
+          </div>
+        </div>
+      </div>
+      <div class="profile__table">
+        <table>
+          <tr class="profile__table__titles">
+            <th>#</th>
+            <th>Product Name</th>
+            <th>Quantity</th>
+            <th>Unit Price</th>
+            <th>Total</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Burger</td>
+            <td>2</td>
+            <td>1500 KZT</td>
+            <td>3000 KZT</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Big fries</td>
+            <td>3</td>
+            <td>700 KZT</td>
+            <td>2100 KZT</td>
+          </tr>
+          <tr class="profile__table__total">
+            <td></td>
+            <td>Delivery</td>
+            <td>-</td>
+            <td>500 KZT</td>
+            <td>5600 KZT</td>
+          </tr>
+        </table>
+      </div>
+      <div class="profile__modal__footer">
+        <div class="profile__status-content">
+          <h4>Payment Status</h4>
+          <p class="status">PAID</p>
+          <p>Payment Method: <span>Kaspi</span></p>
+          <p class="thanks">Thanks for the purchase</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
+<script src="./scripts/profile.js"></script>
 </html>

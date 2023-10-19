@@ -110,6 +110,85 @@
   border: 2px solid #009de0;
   transition: 0.3s;
 }
+
 .profile__footer {
   margin: 0;
+}
+
+.profile__modal1 {
+  width: 50%;
+}
+.profile__top-section {
+  font-family: WoltHeading-Omnes, -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", Arimo, "Open Sans", sans-serif;
+  margin-top: 12px;
+  color: white;
+  border-radius: 8px;
+  padding: 16px;
+  height: 15%;
+  background-color: #01b0eb;
+}
+.profile__top-section h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.profile__address, .profile__contact {
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+.profile__contact-content {
+  float: right;
+  margin-top: 2%;
+}
+.profile__email {
+  margin-bottom: 4px;
+}
+
+.profile__table {
+  font-family: WoltHeading-Omnes, -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", Arimo, "Open Sans", sans-serif;
+  margin-top: 20px;
+  padding: 0 10px;
+}
+.profile__table > table {
+  width: 100%;
+}
+.profile__table__titles, .profile__table__total {
+  font-weight: bold;
+  color: white;
+  background-color: #01b0eb;
+}
+.profile__table table, th, td {
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #01b0eb;
+  border-collapse: collapse;
+}
+
+.profile__modal__footer {
+  font-family: WoltHeading-Omnes, -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", Arimo, "Open Sans", sans-serif;
+  margin-top: 12px;
+  padding: 16px;
+  position: absolute;
+  bottom: 2.5%;
+  left: 25%;
+  right: 0;
+}
+.profile__status-content h4 {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.profile__status-content .status {
+  padding: 5px 8px;
+  border-radius: 5px;
+  margin-bottom: 8px;
+  display: inline-block;
+  background-color: lawngreen;
+}
+.profile__status-content .thanks {
+  color: gray;
+  margin-top: 12px;
+  width: 65%;
+  text-align: center;
 }

@@ -45,7 +45,7 @@ body {
 }
 
 .index__appetite {
-  background-image: url('C:/Users/Professional/Desktop/WebDev/Wolt/images/Appetite.jpg');
+  background-image: url('../images/Appetite.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
