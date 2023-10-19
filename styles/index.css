@@ -45,7 +45,7 @@ body {
 }
 
 .index__appetite {
-  background-image: url('C:/Users/Professional/Desktop/WebDev/Wolt/images/Appetite.jpg');
+  background-image: url('../images/Appetite.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -201,7 +201,7 @@ body {
 }
 
 .index__modal {
-  display: flex;
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -332,4 +332,16 @@ body {
 }
 .show_modal {
   display: flex !important;
+}
+.index__modal2 {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 20;
+  justify-content: center;
+  align-items: center;
 }

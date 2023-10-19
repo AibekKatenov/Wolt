@@ -6,6 +6,6 @@ function stopScroll() {
 
 function stopScrollLogin() {
   document.body.classList.toggle("body_stopscroll");
-  let modal = document.getElementById('modal')
+  let modal = document.getElementById('modal2')
   modal.classList.toggle('show_modal')
 }

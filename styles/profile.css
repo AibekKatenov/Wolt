@@ -1,0 +1,194 @@
+.profile__title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: WoltHeading-Omnes, -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", Arimo, "Open Sans", sans-serif;
+}
+.profile__pref {
+  margin: 70px 0 40px;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 50px 10px;
+  border-bottom: 1px solid lightgray;
+}
+.profile__pref__icon {
+  background-color: rgb(0, 157, 224);
+  width: 25%;
+  height: 100%;
+}
+.profile__information {
+  display: flex;
+  flex-direction: column;
+  padding: 0 70px 70px;
+}
+.profile__input {
+  color: white;
+  background-color: rgb(0, 157, 224);
+}
+.profile__pref__icon:hover {
+  border: 2px solid white;
+  filter: brightness(1.1);
+}
+
+.profile__information {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 40px;
+  margin-top: 20px;
+}
+.profile__private {
+  display: flex;
+}
+.profile__private__info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.profile__private__mails {
+  display: flex;
+  grid-gap: 50px;
+  margin-top: 6%;
+}
+.profile__private__info > h1, .profile__information > h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  font-family: WoltHeading-Omnes, -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", Arimo, "Open Sans", sans-serif;
+}
+.profile__private__mail {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 12px;
+  justify-content: center;
+}
+.profile__private__mail > h3, .profile__private__mail > p, .profile__promocode__title > h2, .profile__promocodes > p {
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", Arimo, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.profile__private__mail > h3 {
+  font-weight: bold;
+  font-size: 18px;
+}
+.profile__promocodes {
+  margin-top: 40px;
+  padding: 0 100px;
+  display: flex;
+  justify-content: space-around;
+}
+.profile__promocode {
+  width: 40%;
+  padding: 2% 1.5% 3.5%;
+  grid-gap: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid lightgrey;
+  border-radius: 4px;
+}
+.profile__promocode__title {
+  display: flex;
+  justify-content: space-between;
+}
+.profile__promocode__title > h2 {
+  font-weight: bold;
+  font-size: 20px;
+}
+.profile__promocode > p {
+  font-size: 14px;
+  color: rgba(32, 33, 37, 0.64)
+}
+.profile__history {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 20px;
+}
+.profile__trade {
+  width: 100%;
+  border: 2px solid lightgrey;
+  border-radius: 8px;
+  padding: 2% 1.5% 2.5%;
+}
+.profile__trade:hover {
+  border: 2px solid #009de0;
+  transition: 0.3s;
+}
+
+.profile__footer {
+  margin: 0;
+}
+
+.profile__modal1 {
+  width: 50%;
+}
+.profile__top-section {
+  font-family: WoltHeading-Omnes, -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", Arimo, "Open Sans", sans-serif;
+  margin-top: 12px;
+  color: white;
+  border-radius: 8px;
+  padding: 16px;
+  height: 15%;
+  background-color: #01b0eb;
+}
+.profile__top-section h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.profile__address, .profile__contact {
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+.profile__contact-content {
+  float: right;
+  margin-top: 2%;
+}
+.profile__email {
+  margin-bottom: 4px;
+}
+
+.profile__table {
+  font-family: WoltHeading-Omnes, -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", Arimo, "Open Sans", sans-serif;
+  margin-top: 20px;
+  padding: 0 10px;
+}
+.profile__table > table {
+  width: 100%;
+}
+.profile__table__titles, .profile__table__total {
+  font-weight: bold;
+  color: white;
+  background-color: #01b0eb;
+}
+.profile__table table, th, td {
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #01b0eb;
+  border-collapse: collapse;
+}
+
+.profile__modal__footer {
+  font-family: WoltHeading-Omnes, -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", Arimo, "Open Sans", sans-serif;
+  margin-top: 12px;
+  padding: 16px;
+  position: absolute;
+  bottom: 2.5%;
+  left: 25%;
+  right: 0;
+}
+.profile__status-content h4 {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.profile__status-content .status {
+  padding: 5px 8px;
+  border-radius: 5px;
+  margin-bottom: 8px;
+  display: inline-block;
+  background-color: lawngreen;
+}
+.profile__status-content .thanks {
+  color: gray;
+  margin-top: 12px;
+  width: 65%;
+  text-align: center;
+}
