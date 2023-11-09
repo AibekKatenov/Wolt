@@ -1,3 +1,13 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['user_email'])) {
+    header("Location: index.html");
+    exit();
+}
+$userEmail = $_SESSION['user_email'];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -52,7 +62,7 @@
         <div class="profile__private__mails">
           <div class="profile__private__mail">
             <h3>Email</h3>
-            <p>timur.baitukenov21@fizmat.kz</p>
+            <p><?php echo $userEmail?></p>
           </div>
           <div class="profile__private__mail">
             <h3>Номер телефона</h3>

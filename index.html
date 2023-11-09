@@ -112,7 +112,7 @@
             </ul>
         </div>
     </footer>
-    <div class="index__modal" id="modal">
+    <form method="POST" action="./register.php" class="index__modal" id="modal">
         <div class="index__modal1">
             <button class="index__modal__cancel" onclick="stopScroll()"><i class='fa-solid fa-x'></i></button>
             <div class="index__modal__enter">
@@ -144,16 +144,16 @@
                     <div></div>
                 </div>
                 <div class="index__modal__data">
-                    <input class="index__appetite__input index__modal__datain" type="text" placeholder="Введите ваше имя" />
-                    <input class="index__appetite__input index__modal__datain" type="text" placeholder="Введите электронную почту" />
-                    <input class="index__appetite__input index__modal__datain" type="text" placeholder="Введите пароль" />
-                    <input class="index__appetite__input index__modal__datain" type="text" placeholder="Введите пароль заново" />
-                    <button class="index__appetite__input index__modal__g_button index__modal__f_button index__modal__enter__button">Создать</button>
+                    <input class="index__appetite__input index__modal__datain" type="text" name="regname" placeholder="Введите ваше имя" />
+                    <input class="index__appetite__input index__modal__datain" type="email" name="regemail" placeholder="Введите электронную почту" />
+                    <input class="index__appetite__input index__modal__datain" type="password" name="regpassword" placeholder="Введите пароль" />
+                    <input class="index__appetite__input index__modal__datain" type="password" name="reregpassword" placeholder="Введите пароль заново" />
+                    <button type="submit" class="index__appetite__input index__modal__g_button index__modal__f_button index__modal__enter__button">Создать</button>
                 </div>
             </div>
-        </div>
+        </form>
     </div>
-    <div class="index__modal2" id="modal2">
+    <form class="index__modal2" id="modal2" method="POST" action="./login.php">
         <div class="index__modal1">
             <button class="index__modal__cancel" onclick="stopScrollLogin()"><i class='fa-solid fa-x'></i></button>
             <div class="index__modal__enter">
@@ -185,12 +185,12 @@
                     <div></div>
                 </div>
                 <div class="index__modal__data">
-                    <input class="index__appetite__input index__modal__datain" type="text" placeholder="Введите электронную почту" />
-                    <input class="index__appetite__input index__modal__datain" type="text" placeholder="Введите пароль" />
-                    <button class="index__appetite__input index__modal__g_button index__modal__f_button index__modal__enter__button">Войти</button>
+                    <input class="index__appetite__input index__modal__datain" name="loginemail" type="email" placeholder="Введите электронную почту" />
+                    <input class="index__appetite__input index__modal__datain" name="loginpassword" type="password" placeholder="Введите пароль" />
+                    <button type="submit" class="index__appetite__input index__modal__g_button index__modal__f_button index__modal__enter__button">Войти</button>
                 </div>
             </div>
-        </div>
+        </form>
     </div>
 </body>
 <script src="./scripts/index.js"></script>
