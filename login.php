@@ -37,4 +37,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     mysqli_close($conn);
 }
+
+if($_SERVER["REQUEST_METHOD"] == "GET") {
+    session_destroy();
+}
 ?>

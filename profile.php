@@ -27,6 +27,7 @@ $userEmail = $_SESSION['user_email'];
       <div class="store_header_logo">
         <a href="./store.html"><img src="./images/wolt-logo.webp" alt="" /></a>
       </div>
+      <button onclick="callPhpScript()">Выйти</button>
     </div>
     <div class="store_header_center">
       <div class="store_header_center_container">
@@ -230,4 +231,20 @@ $userEmail = $_SESSION['user_email'];
   </div>
 </body>
 <script src="./scripts/profile.js"></script>
+<script>
+    function callPhpScript() {
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', './login.php', true);
+
+        xhr.onload = function () {
+            if (xhr.status >= 200 && xhr.status < 300) {
+                console.log(xhr.responseText);
+                location.reload()
+            } else {
+                console.error('Ошибка при выполнении запроса: ' + xhr.statusText);
+            }
+        };
+        xhr.send();
+    }
+</script>
 </html>
