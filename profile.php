@@ -5,6 +5,11 @@ if (!isset($_SESSION['user_email'])) {
     header("Location: index.html");
     exit();
 }
+
+if( !isset($_SESSION['logtime'])){
+  $_SESSION['logtime'] = date("Y-m-d H:i:s");
+}
+echo "<div style='position: absolute; left: 250px; top: 70px; z-index: 10000;'>Вы зашли " . strtotime(date('Y-m-d H:i:s')) - strtotime($_SESSION['logtime']) . " секунд назад</div>" ;
 $userEmail = $_SESSION['user_email'];
 ?>
 
@@ -16,6 +21,7 @@ $userEmail = $_SESSION['user_email'];
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Profile</title>
   <link rel="stylesheet" href="global.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script
       src="https://kit.fontawesome.com/b04fc8f8bf.js"
       crossorigin="anonymous"
@@ -233,18 +239,33 @@ $userEmail = $_SESSION['user_email'];
 <script src="./scripts/profile.js"></script>
 <script>
     function callPhpScript() {
-        var xhr = new XMLHttpRequest();
-        xhr.open('GET', './login.php', true);
+      $.ajax({
+        url: './login.php',
+        type: 'GET',
+        success: function (result) {
+          alert(result)
+          location.reload()
+        },
+        error: function () {
+          console.log('error happened')
+        }
+      })
+        // var xhr = new XMLHttpRequest();
+        // xhr.open('GET', './login.php', true);
 
-        xhr.onload = function () {
-            if (xhr.status >= 200 && xhr.status < 300) {
-                console.log(xhr.responseText);
-                location.reload()
-            } else {
-                console.error('Ошибка при выполнении запроса: ' + xhr.statusText);
-            }
-        };
-        xhr.send();
+        // <?php 
+        //   echo "<h2 style='z-index: 1000; color:red '>" . strtotime($_SESSION['logtime']) - strtotime(date('Y-m-d H:i:s')) . "</h2>";
+        //   sleep(5);
+        // ?>
+        // xhr.onload = function () {
+        //     if (xhr.status >= 200 && xhr.status < 300) {
+        //         console.log(xhr.responseText);
+        //         location.reload()
+        //     } else {
+        //         console.error('Ошибка при выполнении запроса: ' + xhr.statusText);
+        //     }
+        // };
+        // xhr.send();
     }
 </script>
 </html>

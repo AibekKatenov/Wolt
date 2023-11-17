@@ -39,6 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 
 if($_SERVER["REQUEST_METHOD"] == "GET") {
+    echo strtotime(date('Y-m-d H:i:s')) - strtotime($_SESSION['logtime']);
     session_destroy();
 }
 ?>
